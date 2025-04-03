@@ -15,11 +15,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 128px;
+  padding: 16px 16vw;
 }
 
 header > .title {
-  font-size: 24px;
+  font-weight: bold;
   color: #f9faf8;
 }
 
@@ -32,7 +32,7 @@ header > .title {
 }
 
 a {
-  font-size: 18px;
+  font-size: 12px;
   color: #e5e7eb;
   text-decoration: none;
 }
@@ -45,6 +45,55 @@ main {
 
 main > * {
   flex: 1;
+}
+
+.hero {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16vw;
+}
+
+.hero > .container {
+  width: 350px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.hero .title {
+  font-size: 32px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.hero .text {
+  font-size: 12px;
+  color: #e5e7eb;
+}
+
+button.signup {
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-weight: bold;
+  padding: 8px 24px;
+  border: 1px solid #3882f6;
+  border-radius: 8px;
+}
+
+.hero > .image {
+  background-color: #707070;
+  color: #e5e7eb;
+  font-size: 12px;
+  width: 350px;
+  height: 175px;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article {
