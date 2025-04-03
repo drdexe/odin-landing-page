@@ -10,6 +10,7 @@ body {
   justify-content: space-between;
 }
 
+/* header */
 header {
   background-color: #1f2937;
   display: flex;
@@ -37,6 +38,7 @@ a {
   text-decoration: none;
 }
 
+/* main */
 main {
   flex: 1;
   display: flex;
@@ -47,6 +49,7 @@ main > * {
   flex: 1;
 }
 
+/* hero section */
 .hero {
   background-color: #1f2937;
   display: flex;
@@ -96,6 +99,7 @@ main > * {
   align-items: center;
 }
 
+/* info section */
 .info > .title {
   font-size: 24px;
   color: #1f2937;
@@ -124,6 +128,7 @@ main > * {
   width: 110px;
 }
 
+/* article */
 article {
   background-color: #e5e7eb;
   color: #1f2937;
@@ -147,6 +152,7 @@ article {
   text-align: right;
 }
 
+/* modal section */
 .modal {
   display: flex;
   justify-content: center;
@@ -177,6 +183,7 @@ article {
   border-color: #f9faf8;
 }
 
+/* footer */
 footer {
   font-size: 12px;
   background-color: #1f2937;
