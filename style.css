@@ -1,13 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-  font-family: Roboto, sans-serif;
+/* Universal */
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Typography */
+.title {
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.text,
+.links a {
+  color: #e5e7eb;
+  font-size: .75rem;
 }
 
 /* header */
@@ -16,25 +32,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 16vw;
-}
-
-header > .title {
-  font-weight: bold;
-  color: #f9faf8;
+  padding: 1rem 16vw;
 }
 
 .links {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 a {
-  font-size: 12px;
-  color: #e5e7eb;
   text-decoration: none;
 }
 
@@ -67,30 +74,20 @@ main > * {
   align-items: flex-start;
 }
 
-.hero .title {
-  font-size: 32px;
-  color: #f9faf8;
-  font-weight: 900;
-}
-
-.hero .text {
-  font-size: 12px;
-  color: #e5e7eb;
+.hero div.title {
+  font-size: 2rem;
 }
 
 .signup {
-  background-color: #3882f6;
-  color: #f9faf8;
   font-weight: bold;
-  padding: 8px 24px;
+  background-color: #3882f6;
+  padding: 0.5em 1.5em;
   border: 1px solid #3882f6;
   border-radius: 8px;
 }
 
 .hero > .image {
   background-color: #707070;
-  color: #e5e7eb;
-  font-size: 12px;
   width: 350px;
   height: 175px;
   flex: none;
@@ -101,17 +98,16 @@ main > * {
 
 /* info section */
 .info > .title {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #1f2937;
-  font-weight: 900;
   text-align: center;
-  margin: 24px;
+  margin: 1em;
 }
 
 .info > .container {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .card > img {
@@ -122,7 +118,6 @@ main > * {
 }
 
 .card > .text {
-  font-size: 12px;
   color: gray;
   text-align: center;
   width: 110px;
@@ -139,14 +134,14 @@ article {
 }
 
 .quote {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: light;
   font-style: italic;
   width: 550px;
 }
 
-.quotee {
-  font-size: 20px;
+.quote + div {
+  font-size: 1.25rem;
   font-weight: bold;
   width: 550px;
   text-align: right;
@@ -169,25 +164,13 @@ article {
   align-items: center;
 }
 
-.modal .title {
-  color: #f9faf8;
-  font-weight: bold;
-}
-
-.modal .text {
-  font-size: 12px;
-  color: #e5e7eb;
-}
-
 .modal .signup {
   border-color: #f9faf8;
 }
 
 /* footer */
 footer {
-  font-size: 12px;
   background-color: #1f2937;
-  color: #e5e7eb;
   text-align: center;
-  padding: 16px;
+  padding: 1rem;
 }
